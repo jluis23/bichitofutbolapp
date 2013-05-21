@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="100dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_gravity="center_vertical"
+	        android:scaleType="centerCrop"
+	        android:layout_height="100dp"
+	        android:src="@drawable/ic_launcher" />
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:gravity="center_vertical"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"   >
+		    
+		    <TextView
+	            android:id="@+id/fechaNoticia"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|right"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:maxLines="1"
+	            android:text="Fecha"
+	            android:textColor="@android:color/white"
+	            android:textSize="8sp" />
+		    
+		    <TextView
+		        android:textColor="@android:color/white"
+		        android:id="@+id/tituloNoticia"
+		        android:maxLines="4"
+		         android:layout_marginLeft="5dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="TextView" />
+		    <TextView
+		        android:layout_marginLeft="5dp"
+		        android:layout_gravity="center_vertical"
+		        android:id="@+id/textoNoticia"
+		        android:maxLines="4"
+		        android:layout_marginRight="15dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="TextView"
+		        android:textColor="@color/article_text_color"  />
+		</LinearLayout>
+	</LinearLayout>
+	<View
+	        android:layout_width="match_parent"
+	        android:layout_height="3dp"
+	        android:background="@color/separator_gray_color" />
+</LinearLayout>

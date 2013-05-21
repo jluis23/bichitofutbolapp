@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_home" android:icon="@drawable/icono_home_bicho" android:visible="false" android:showAsAction="always" android:title="@string/home"></item>
+    <item android:id="@+id/refresh_content" android:icon="@drawable/navigation_refresh" android:visible="true" android:showAsAction="always" android:title="@string/refresh"></item>
+    <!-- <item android:id="@+id/menu_toggle_drawer" android:icon="@drawable/menu_top" android:visible="true" android:showAsAction="always" android:title="@string/show_drawer_text"></item> -->
+</menu>

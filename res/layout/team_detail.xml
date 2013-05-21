@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_retry_layout" />
+
+    <ScrollView
+        android:id="@+id/fullcontent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/back_repet_pestanaresultados"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:paddingTop="30dp"
+	            android:background="@drawable/back_fondo_detalle_equipo"
+	            android:paddingBottom="30dp" >
+            
+	            <ImageView
+	                android:id="@+id/main_image"
+	                android:layout_width="110dp"
+	                android:layout_height="110dp"
+	                android:layout_gravity="center_horizontal"
+	                android:scaleType="center"
+	                android:src="@drawable/ic_launcher" />
+					
+	            <TextView
+	                android:id="@+id/teamName"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_horizontal"
+	                android:layout_marginTop="5dp"
+	                android:text=""
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="@android:color/black" />
+	        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+        		android:background="#E6E7E8"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Presidente"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/textPresident"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrenador"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/textCoach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+				
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Estadio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/textStadium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Capacidad"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/textCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:text="Campeonatos"
+				    android:textAppearance="?android:attr/textAppearanceMedium"
+				    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/championships"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Vicecampeonatos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/second_places"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sitio web"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/match_time_text_color" />
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:linksClickable="true"
+                    android:autoLink="all"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/btn_ver_jugadores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/boton_ver_plantilla"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white" >
+                </ImageButton>
+            </LinearLayout>
+            <!--
+        ListView
+            android:id="@+id/players_list"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1" >
+        </ListView
+            -->
+        </LinearLayout>
+        <LinearLayout 
+        	    android:id="@+id/layout_necesita_login"
+        	    android:layout_width="match_parent"
+        	    android:padding="10dp"
+        	    android:visibility="gone"
+        	    android:orientation="vertical"
+        	    android:layout_height="wrap_content">
+
+            	<TextView
+            	    android:id="@+id/textViewNecesitaLogin"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"
+            	    android:layout_marginLeft="5dp"
+            	    android:layout_marginBottom="10dp"
+            	    android:text="Inicie sesión para ver las opciones"
+            	    android:textAppearance="?android:attr/textAppearanceMedium"
+            	    android:textColor="@android:color/white" />
+            	<ImageButton
+            		android:id="@+id/needLoginButton"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="center"
+           			android:background="@drawable/fondo_sesion"
+            		android:scaleType="fitCenter"
+	            	android:src="@drawable/iniciar_sesion"
+            		android:text="" />
+        </LinearLayout>
+        <!-- NOTIFICACIONES****************************************************** -->
+        
+        	<LinearLayout
+                    android:id="@+id/notifications_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+					<RelativeLayout
+					    android:layout_width="match_parent"
+					    android:id="@+id/configuracion"
+                        android:layout_height="wrap_content">
+                		
+                		<RelativeLayout
+                		    android:id="@+id/icono_configuracion"
+                		    android:layout_width="match_parent"
+                		    android:layout_height="match_parent" >
+
+	                		<ImageView
+		                          android:id="@+id/icono_config"
+		                          android:layout_width="match_parent"
+		                          android:layout_height="wrap_content"
+		                          android:layout_centerVertical="true"
+		                          android:layout_gravity="center_horizontal"
+		                          android:scaleType="center"
+		                          android:src="@drawable/boton_configuraciones_icono" />
+	                	</RelativeLayout>
+						<RelativeLayout
+					    	android:layout_width="match_parent"
+					    	android:layout_below="@+id/icono_configuracion"
+                        	android:layout_height="wrap_content">
+		                    	<TextView
+			                        android:id="@+id/textView1"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_centerVertical="true"
+			                        android:layout_marginLeft="5dp"
+			                        android:text="Configuración"
+			                        android:visibility="gone"
+			                        android:textAppearance="?android:attr/textAppearanceMedium"
+			                        android:textColor="@android:color/white" />
+			                    <Button
+			                        android:id="@+id/save"
+			                        style="?android:attr/buttonStyleSmall"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_marginRight="5dp"
+			                        android:textColor="@android:color/white"
+			                        android:layout_alignParentRight="true"
+			                        android:text="Guardar" />
+			                    <Button
+			                        android:id="@+id/activarTodas"
+			                        style="?android:attr/buttonStyleSmall"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_marginRight="5dp"
+			                        android:textColor="@android:color/white"
+			                        android:layout_alignParentLeft="true"
+			                        android:text="Activar Todas" />
+		                   </RelativeLayout>
+					</RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ToggleButton
+                            android:id="@+id/notificacion_partidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="1"
+                            android:text=""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ToggleButton
+                            android:id="@+id/notificacion_goles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="2"
+                            android:text=""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ToggleButton
+                            android:id="@+id/notificacion_faltas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="3"
+                            android:text=""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ToggleButton
+                            android:id="@+id/notificacion_cambios"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="4"
+                            android:text=""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ToggleButton
+                            android:id="@+id/notificacion_penales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="5"
+                            android:text=""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ToggleButton
+                            android:id="@+id/notificacion_noticias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="6"
+                            android:text=""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</merge>

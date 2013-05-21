@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_retry_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_repet_pestanaresultados"
+        android:orientation="vertical" >
+        <ScrollView
+            android:id="@+id/fullcontent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adsdkContent"
+            android:background="@drawable/back_repet_pestanaresultados"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_repet_pestanaresultados"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/texto_pestananoticias" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/newsDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="#cecece"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/newsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="#cecece"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/main_image"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_launcher"
+                    android:paddingBottom="10dp" />
+				
+                
+                <View
+		            android:layout_width="match_parent"
+		        	android:layout_height="1dp"
+		        	android:background="@android:color/white">
+        		</View>
+                <WebView
+                    android:paddingTop="10dp"
+                    android:id="@+id/text_fullcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+               
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+                    android:id="@+id/adsdkContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal" >
+		</RelativeLayout>
+    </RelativeLayout>
+
+</merge>

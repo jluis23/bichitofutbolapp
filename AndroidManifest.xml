@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dayscript.bichitofutbolapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <permission
+        android:name="com.dayscript.bichitofutbolapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.dayscript.bichitofutbolapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label=""
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="ormdroid.database.name"
+            android:value="BichitoFutbol" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        
+        <activity
+            android:name="com.dayscript.bichitofutbolapp.SplashActivity"
+            android:label="Bichito del Fútbol" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.NewsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.FullContent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.PositionsTableActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.TablaDeGoleadoresActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:logo="@drawable/logo_claro" 
+            android:name="com.dayscript.bichitofutbolapp.TeamsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.CabinaClaroActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.AudioGolesActivity"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.CalendarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.MatchDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.MultimediaGolesDeLaFechaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.TeamDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.GaleriaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.ImageGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.ImagePagerActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.FacebookLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.TweetsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.MarcadorClaroActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.CabinaClaro2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:logo="@drawable/logo_claro"
+            android:name="com.dayscript.bichitofutbolapp.ClaroTvActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <service
+            android:name="com.dayscript.bichitofutbolapp.service.NotificationsFetcherService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:process=":notifications" >
+        </service>
+		<service android:name=".GCMIntentService" />
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.dayscript.bichitofutbolapp" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

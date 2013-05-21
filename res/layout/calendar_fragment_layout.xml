@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <LinearLayout android:id="@+id/superior"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:background="@drawable/back_repet_pestanaresultados"
+      android:padding="10dp">
+      
+      <Spinner android:id="@+id/torneos"
+          android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_weight="1"
+	      android:background="@android:color/transparent"
+	      android:layout_marginRight="10dp"
+	  />
+      
+	  <Spinner android:id="@+id/fechas"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_weight="1"
+	      android:background="@android:color/transparent"
+	  />
+  </LinearLayout>
+  <FrameLayout
+       android:id="@+id/fragment_calendar_dates_container"
+       android:layout_width="match_parent"
+       android:layout_below="@+id/superior"
+       android:layout_height="match_parent">
+   </FrameLayout>
+   <RelativeLayout
+            android:id="@+id/adsdkContent12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/back_repet_pestanaresultados"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" >
+    </RelativeLayout>
+ </RelativeLayout>

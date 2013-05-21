@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_repet_pestanaresultados" >
+     <LinearLayout
+         android:id="@+id/titulo_marcador_claro"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/back_repet_pestanaresultados"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:scaleType="center"
+             android:src="@drawable/titulo_campeonato_bandera" />
+     </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_calendar_container"
+        android:background="@drawable/back_repet_pestanaresultados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titulo_marcador_claro"
+        android:layout_above="@+id/adsdkContent12" >
+    </FrameLayout>
+    
+     <RelativeLayout
+            android:id="@+id/adsdkContent12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" >
+    </RelativeLayout>
+</RelativeLayout>

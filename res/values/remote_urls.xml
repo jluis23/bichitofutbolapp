@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="base_path" >http://jorgeisaac.com/api_futbol/web/app_dev.php</string>
+	<string name="get_news_list" >/methods/v1_0/info/news/list</string>
+	<string name="get_news_list_x_date_category">/methods/v1_0/info/news/date/</string>    
+	<string name="news_detail">/methods/v1_0/info/news/id/</string>
+	<string name="get_match_results">/methods/v1_0/info/match/results/</string>
+	<string name="get_teams_list">/methods/v1_0/info/teams/list</string>
+	<string name="get_team_detail">/methods/v1_0/info/teams/id/</string>     
+	<string name="get_calendar_dates">/methods/v1_0/info/calendar/dates</string>
+	<string name="get_calendar">/methods/v1_0/info/get/calendar</string>
+	<string name="get_table_positions">/methods/v1_0/info/get/table/positions</string>
+	<string name="get_tabla_goleadores">/methods/v1_0/info/tabla/goleadores</string>
+	<string name="get_notifications">/methods/v1_0/info/get/notifications</string>
+	<string name="get_categories">/methods/v1_0/info/categories/list</string>
+	<string name="save_user">/methods/v1_0/info/save/user</string>
+	<string name="save_user_notifications">/methods/v1_0/info/registerUpdate/userevents/%s</string>
+	<string name="get_match_detail">/methods/v1_0/info/match/detail/</string>
+	<string name="ads_base_path">http://jorgeisaac.com/upload/md.request.php</string>
+	<string name="ads_token">3724b4660518ca1c161b0afd08555fae</string>
+	<string name="get_multimedia">/methods/v1_0/info/getMedia/%s</string>
+	<string name="get_albums_list">/methods/v1_0/info/get/albums/list</string>
+	<string name="get_album_content">/methods/v1_0/info/get/album/items/</string>
+	<string name="get_albums_list_x_tipo">/methods/v1_0/info/get/albums/list/tipo/</string>
+	<string name="get_tweets_list">/methods/v1_0/info/get/tweets/</string>
+	<string name="get_id_fecha_actual">/methods/v1_0/info/get/id/fechaactual/</string>
+	<string name="get_table_positions_goleadores">/methods/v1_0/info/get/table/positionsGoleadores</string>
+	<string name="get_contenido_cabina_claro">/methods/v1_0/info/getMedia/CabinaClaro/</string>
+</resources>

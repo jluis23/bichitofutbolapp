@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_retry_layout" />
+
+
+<LinearLayout 
+    android:id="@+id/fullcontent_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_repet_pestanaresultados"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	 <TextView
+        android:id="@+id/fecha"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/match_time_text_color"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/equipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:lines="2"
+                android:maxLines="2"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/logoEquipo1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <TextView
+                android:id="@+id/golesEquipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:layout_marginLeft="6dp"
+            android:visibility="gone"
+              android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		<LinearLayout
+		    android:layout_gravity="center_vertical"
+		    android:gravity="center_vertical"
+		    android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/equipo2"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:lines="2"
+                android:layout_gravity="center_horizontal"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <ImageView
+                
+                android:id="@+id/logoEquipo2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <TextView
+                android:id="@+id/golesEquipo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+               	android:textColor="@android:color/white"
+               	android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+   
+
+    <TextView
+        android:id="@+id/stadium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+         android:layout_marginLeft="15dp"
+         android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Spinner android:id="@+id/fichapartido_fotos_spinner"
+          android:layout_width="fill_parent"
+          android:background="@android:color/transparent"
+	      android:layout_height="wrap_content"
+	      android:layout_marginTop="15dp" />
+    
+     <TextView
+           android:id="@+id/txt_match_detaiL_no_datos"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="left"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="20dp"
+           android:gravity="left"
+           android:visibility="gone"
+           android:text="No existen datos"
+           android:textColor="@android:color/white"
+           android:textSize="16sp"
+    />
+ 	<ListView
+ 	    android:layout_marginTop="5dp"
+        android:id="@+id/listMinutoMinuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    <GridView
+	    android:id="@+id/gridviewmatch"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:horizontalSpacing="6dip"
+	    android:numColumns="2"
+	    android:stretchMode="columnWidth"
+	    android:verticalSpacing="6dip"
+	    android:padding="5dp"
+	    android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/adsdkContent12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/back_repet_pestanaresultados"
+        android:gravity="bottom|center_horizontal" >
+
+    </RelativeLayout>
+</LinearLayout>
+
+</merge>

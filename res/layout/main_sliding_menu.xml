@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_slide_menu" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout android:id="@+id/userContainer"
+            android:background="@drawable/cabecera_back_repet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/lblUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <FrameLayout
+                android:id="@+id/profileImageContainer"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                >
+            </FrameLayout>
+        </RelativeLayout>
+
+      
+		 <ImageButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:background="@drawable/fondo_sesion"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iniciar_sesion"
+            android:text="" />
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_sesion"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cerrar_sesion"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/claroTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:src="@drawable/claro_tv"
+            android:text=""
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/golesFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:src="@drawable/goles_fecha"
+            android:visibility="gone"
+            android:text="" />
+          <ImageButton
+            android:id="@+id/cabinaClaro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:text="" />
+        <ImageButton
+            android:id="@+id/teamslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/positionstable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tabla_posiciones"
+            android:visibility="gone"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/calendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/quiniela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:src="@drawable/marcador_claro" />
+        <ImageButton
+            android:id="@+id/social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_slide_menu"
+            android:visibility="gone"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+</ScrollView>

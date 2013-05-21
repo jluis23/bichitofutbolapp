@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/back_repet_pestanaresultados"
+    android:orientation="vertical" >
+    <LinearLayout
+         android:id="@+id/titulo_2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/back_repet_pestanaresultados"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:scaleType="center"
+             android:src="@drawable/titulo_2" />
+     </LinearLayout>
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		 android:id="@+id/contenido"
+		 android:layout_below="@+id/titulo_2"
+		 android:background="@drawable/back_repet_pestanaresultados">
+		 
+	    <ListView
+	        android:id="@+id/list_view_tweet"
+	        android:fadeScrollbars="true"
+	        android:fadingEdge="none"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" android:divider="@null" >
+	    </ListView>
+	   	<RelativeLayout
+	        android:id="@+id/adsdkContent12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/back_repet_pestanaresultados"
+	        android:layout_gravity="center_horizontal"
+	        android:gravity="center_horizontal" >
+	    </RelativeLayout>
+	   	</RelativeLayout>
+	   	<include
+	   	    android:layout_below="@+id/contenido"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        layout="@layout/loading_retry_layout" />
+	</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_repet_pestanaresultados"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical"
+    	android:padding="3dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginBottom="15dp"
+    	android:orientation="vertical">
+
+    	<TextView
+    	    android:id="@+id/gallery_grid_titulo_album"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center"
+    	    android:textSize="20dp"
+    	    android:textStyle="bold"
+    	    android:textColor="@android:color/white"
+    	    android:text="" />
+
+    	<TextView
+    	    android:id="@+id/gallery_grid_descripcion_album"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:textColor="@color/article_text_color"
+    	    android:padding="5dp"
+    	    android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@android:color/darker_gray"
+    	android:padding="10dp"
+    	android:orientation="vertical">
+    		<LinearLayout 
+				        android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+				        android:id="@+id/layout_icono_fotos"
+				        android:layout_marginTop="5dp"
+				        android:layout_marginBottom="15dp"
+				        android:layout_gravity="center_vertical|center_horizontal"
+				        android:orientation="horizontal">
+
+				        <ImageView
+				            android:id="@+id/galeria_numeroFotos"
+				            android:layout_width="fill_parent"
+				            android:layout_height="fill_parent"
+				            android:layout_gravity="left|center_vertical"
+				            android:layout_marginLeft="10dp"
+				            android:contentDescription="ImagenFondo"
+				            android:src="@drawable/icono_camara" />
+				        
+				        <TextView
+				        android:id="@+id/gallery_grid_album_numeroFotos"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="5dp"
+				        android:layout_marginRight="15dp"
+				        android:maxLines="3"
+				        android:textSize="21dp"
+				        android:textStyle="bold"
+				        android:text=""
+				        android:textColor="@android:color/black" />
+				   </LinearLayout>
+    	
+		<GridView
+		    android:id="@+id/gridview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:gravity="center"
+		    android:horizontalSpacing="6dip"
+		    android:numColumns="2"
+		    android:stretchMode="columnWidth"
+		    android:verticalSpacing="6dip"
+		    android:padding="5dp"
+		    android:background="@android:color/transparent" />
+	    </LinearLayout>
+ </LinearLayout>

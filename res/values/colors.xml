@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="background_listfragment">#333333</color>
+ <color name="article_text_color">#aeaeae</color>
+ <color name="stadium_name_text_color">#ff5454</color>
+ <color name="match_time_text_color_bak">#b4b4b4</color>
+ <color name="match_time_text_color">#7f7f7f</color>
+ <color name="match_results_text_color">#7f7f7f</color>
+ <color name="separator_gray_color">#5e5e5e</color>
+ <color name="background_slide_menu_bak">#cfcfcf</color>
+ <color name="background_slide_menu">#383838</color>
+ <color name="background_home_btn">#2B2B2B</color>
+</resources>

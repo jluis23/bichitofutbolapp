@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:padding="3dip"
+    >
+    <TextView
+        android:id="@+id/company"
+        android:padding="3dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="5dip"
+        android:textStyle="bold"
+        android:text="Seleccione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+    <TextView
+        android:padding="2dip"
+        android:layout_marginLeft="5dip"
+        android:id="@+id/sub"
+        android:text="Escoja una opción"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company"
+    />
+
+</RelativeLayout>

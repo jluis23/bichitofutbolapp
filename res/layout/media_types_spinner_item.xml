@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:orientation="vertical"    
+	    android:background="#c6c6c6" 
+	    android:padding="3dip" >
+<ImageView 
+    android:layout_marginLeft="10dp"
+	     android:id="@+id/mediaTypeImage"
+	     android:layout_alignParentLeft="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     
+	     android:src="@drawable/icono_audio"/>
+	 <LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_centerInParent="true"
+	     android:orientation="vertical" >
+
+			<TextView
+			    android:id="@+id/description"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical|center_horizontal"
+			    android:layout_marginTop="5dip"
+			    android:layout_marginBottom="5dp"
+			    android:text="Inter Milan"
+			    android:textColor="@android:color/black"
+			    android:textStyle="bold" />
+
+	</LinearLayout>
+	<ImageView
+	     android:id="@+id/image"
+	     android:layout_alignParentRight="true"
+	     android:layout_centerVertical="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginRight="10dp"
+	     android:src="@drawable/flecha_spinner"/>
+</RelativeLayout>
+</LinearLayout>

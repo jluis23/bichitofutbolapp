@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_login"  android:visible="true" android:showAsAction="ifRoom" android:title="@string/login"></item>
+    <item android:id="@+id/menu_toggle_drawer"
+        android:visible="true" 
+        android:showAsAction="always"
+        android:title="@string/show_drawer_text">
+    </item>
+    
+
+</menu>

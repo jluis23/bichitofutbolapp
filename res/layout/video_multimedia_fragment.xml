@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_repet_pestanaresultados"
+    layout="@layout/loading_retry_layout" />
+<LinearLayout 
+    android:layout_width="match_parent"
+     android:id="@+id/content"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_repet_pestanaresultados"
+    android:orientation="vertical" android:weightSum="100">
+    
+
+    <ListView
+        android:id="@+id/audioList"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="50"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/videoView"
+         >
+    </ListView>
+
+<VideoView
+            android:id="@+id/videoView"
+          android:visibility="gone"
+            android:layout_width="match_parent"
+              android:layout_weight="50"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0px" />
+
+    
+</LinearLayout>
+</LinearLayout>

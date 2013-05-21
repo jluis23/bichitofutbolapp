@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+		android:background="@drawable/back_repet_pestanaresultados"
+    	android:orientation="vertical">
+    	
+	     <LinearLayout
+	         android:id="@+id/titulo_2"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@drawable/back_repet_pestanaresultados"
+	         android:orientation="vertical" >
+	
+	         <ImageView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_gravity="center"
+	             android:scaleType="center"
+	             android:src="@drawable/titulo_goles_de_la_fecha" />
+	     </LinearLayout>
+		<Spinner
+	        android:id="@+id/multimedia_category"
+	        android:layout_width="match_parent"
+	        android:background="@android:color/transparent"
+	        android:layout_height="wrap_content" />
+	    <FrameLayout
+	        android:id="@+id/fragment_container"
+	        android:layout_width="match_parent"
+	        android:visibility="visible"
+	        android:layout_height="wrap_content" >
+	    </FrameLayout>
+	</LinearLayout>
+	<RelativeLayout
+	         android:id="@+id/adsdkContent12"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true"
+	         android:layout_centerHorizontal="true"
+	         android:layout_gravity="bottom"
+	         android:background="@drawable/back_repet_pestanaresultados"
+	         android:gravity="bottom" >
+	</RelativeLayout>
+	</RelativeLayout>

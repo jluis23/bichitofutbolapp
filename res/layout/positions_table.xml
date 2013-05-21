@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_retry_layout" />
+    
+    <RelativeLayout
+        android:id="@+id/positions_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_repet_pestanaresultados"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_results"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adsdkContent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_repet_pestanaresultados"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:src="@drawable/titulo_tablas_estadisticas" />
+            </LinearLayout>
+             <Spinner android:id="@+id/tabla_posiciones_goleadores_spinner"
+          			android:layout_width="fill_parent"
+          			android:background="@android:color/transparent"
+			      	android:layout_height="wrap_content"/>
+            <WebView
+                android:id="@+id/table_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <WebView
+                android:id="@+id/table_content_goleadores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+             <WebView
+                android:id="@+id/table_content_asistentes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout
+	        android:id="@+id/adsdkContent12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+	        android:background="@drawable/back_repet_pestanaresultados"
+	        android:gravity="bottom|center_horizontal" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge>
