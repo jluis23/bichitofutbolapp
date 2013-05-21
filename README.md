@@ -1,4 +1,0 @@
-bichitofutbolapp
-================
-
-Aplicación para android
